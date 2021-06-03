@@ -30,5 +30,5 @@ float wallis_pi(int){
   for(i=1;i<=m;i++){
     k*=(float)(4.*i*i)/(4.*i*i-1);
   }
-  return(k*2)
+  return(k*2);
   }
