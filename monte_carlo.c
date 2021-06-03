@@ -42,26 +42,21 @@ int main(void) {
 float mc_pi(int n)
 {
   float x,y;
-  int i=0, circle=0;
+  int i=0, c=0;
   float z;
-  int sq=0;
+  int s=n;
   float pi;
-  while(i<n-1)
+  for(i=0;i<n;i++)
   {
     x=frandom();
     y=frandom();
     
     z=x*x+y*y;
     if(z<=1){
-    circle+=1;
-      sq+=1;
-    }
-    else{
-      sq+=1;
-      i++;
+    c+=1;
     }
   }
-  pi=(float)*4circle /sq;
+  pi=(float)*4c/s;
   return pi;
 }
 
