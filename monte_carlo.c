@@ -61,24 +61,3 @@ int main(void) {
   }
 }
 
-float mc_pi(int n)
-{
-  float x,y;
-  int i=0, c=0;
-  float z;
-  int s=n;
-  float pi;
-  for(i=0;i<n;i++)
-  {
-    x=frandom();
-    y=frandom();
-    
-    z=x*x+y*y;
-    if(z<=1){
-    c+=1;
-    }
-  }
-  pi= 4.0*c/s;
-  return pi;
-}
-
